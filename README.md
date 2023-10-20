@@ -5,10 +5,10 @@
 ### DATA DESCRIPTION:
 Employee records are stored in the metastore table hr_records in the database hr_db.
 ### OUTPUT REQUIREMENTS:
-• Place the result data in the hdfs directory: /user/studentID/solution.
-• Use a text format with a hyphen as the columnar delimiter.
-• Order results by rank in ascending order.
-• No ranks should be skipped if there are ranks with multiple names.
+- Place the result data in the hdfs directory: /user/studentID/solution.
+- Use a text format with a hyphen as the columnar delimiter.
+- Order results by rank in ascending order.
+- No ranks should be skipped if there are ranks with multiple names.
 ### SAMPLE RESULTS: 
 Fidel:253:1 |
 |Ralph:252:2 |
@@ -16,17 +16,15 @@ Fidel:253:1 |
 |Terrance:250:3|
 **Note: Total records of final output should be 1219**
 
-2. 
-### INSTRUCTIONS:
-Use the EMR data to find the total number of emergency department visits that were due to influenza-like illness and/or pneumonia that resulted in hospitalization for the months of May, June & July.
+2. Use the EMR data to find the total number of emergency department visits that were due to influenza-like illness and/or pneumonia that resulted in hospitalization for the months of May, June & July.
 ### DATA DESCRIPTION:
 Emergency department visits records are stored as Parquet files, compressed using gzip, and stored in the HDFS directory. You may access the directory using this path: /user/verulam_blue/data/emr_data
-• The 'date_of_visit' column represents the date of hospital visit.
-• The 'column li_pne_admissions' represent the count of influenza-like illness and/or pneumonia visits that went on to be admitted to the hospital. 
+- The 'date_of_visit' column represents the date of hospital visit.
+- The 'column li_pne_admissions' represent the count of influenza-like illness and/or pneumonia visits that went on to be admitted to the hospital. 
 ### OUTPUT REQUIREMENTS:
-• Place the result data in the hdfs directory: /user/studentID/solution.
-• Results should show month of visit and number of hospitalizations.
-• Use a text format with a tab as the columnar delimiter.
+- Place the result data in the hdfs directory: /user/studentID/solution.
+- Results should show month of visit and number of hospitalizations.
+- Use a text format with a tab as the columnar delimiter.
 ### RESULTS:
 +---+----------+
 |5 |200801|
@@ -35,12 +33,12 @@ Emergency department visits records are stored as Parquet files, compressed usin
 +---+----------+
 
 3. Working with the "gp_db" database use the "items" column from the metastore table "gp_rx" together with the "gp_address" table to find the total number of prescriptions made by each GP practice in the city of Bolton.
-• The "items" column, in the metastore table "gp_rx", represents the "total number of items prescribed".
-• The first 4 letters of postcodes for GP practices in Bolton are: 'BL1 ','BL2 ','BL3 '
+- The "items" column, in the metastore table "gp_rx", represents the "total number of items prescribed".
+- The first 4 letters of postcodes for GP practices in Bolton are: 'BL1 ','BL2 ','BL3 '
 ### OUTPUT REQUIREMENTS
-• Results data should be saved as a JSON file.
-• Place the result data in the hdfs directory: /user/studentID/solution.
-• Order results by "practice_code" in descending order.
+- Results data should be saved as a JSON file.
+- Place the result data in the hdfs directory: /user/studentID/solution.
+- Order results by "practice_code" in descending order.
 ### DATA DESCRIPTION
 Schema for gp_address table:
 +--------------------+----------------+
