@@ -5,7 +5,7 @@
 ### DATA DESCRIPTION:
 Employee records are stored in the metastore table hr_records in the database hr_db.
 ### OUTPUT REQUIREMENTS:
-• Place the result data in the hdfs directory: /user/studentID/solution
+• Place the result data in the hdfs directory: /user/studentID/solution.
 • Use a text format with a hyphen as the columnar delimiter.
 • Order results by rank in ascending order.
 • No ranks should be skipped if there are ranks with multiple names.
@@ -24,7 +24,7 @@ Emergency department visits records are stored as Parquet files, compressed usin
 • The 'date_of_visit' column represents the date of hospital visit.
 • The 'column li_pne_admissions' represent the count of influenza-like illness and/or pneumonia visits that went on to be admitted to the hospital. 
 ### OUTPUT REQUIREMENTS:
-• Place the result data in the hdfs directory: /user/studentID/solution
+• Place the result data in the hdfs directory: /user/studentID/solution.
 • Results should show month of visit and number of hospitalizations.
 • Use a text format with a tab as the columnar delimiter.
 ### RESULTS:
@@ -38,8 +38,8 @@ Emergency department visits records are stored as Parquet files, compressed usin
 • The "items" column, in the metastore table "gp_rx", represents the "total number of items prescribed".
 • The first 4 letters of postcodes for GP practices in Bolton are: 'BL1 ','BL2 ','BL3 '
 ### OUTPUT REQUIREMENTS
-• Results data should be saved as a JSON file
-• Place the result data in the hdfs directory: /user/studentID/solution
+• Results data should be saved as a JSON file.
+• Place the result data in the hdfs directory: /user/studentID/solution.
 • Order results by "practice_code" in descending order.
 ### DATA DESCRIPTION
 Schema for gp_address table:
